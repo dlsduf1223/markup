@@ -9,4 +9,4 @@
 ## 마크다운 사용법 이해하기
 
 - [마크다운](a_asset/markdown.md) 파일 이용
-- [웹 접근성](google.com) 이해
+- [웹 접근성](https://google.com) 이해
