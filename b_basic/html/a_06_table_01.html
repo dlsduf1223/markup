@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹기초</title>
+  <style>
+    table{
+      width:900px; height:auto; min-height:100px; /* 1cm = 해상도에 따라 다름 */
+      
+      border-width:1px;
+      border-style:solid;
+      border: color #333;
+      border-spacing:0;
+      border-collapse:collapse;
+    }
+    tr {
+      width:100%; height:40px;
+    }
+    th,td {
+      text-align:center;
+      border-width:1px;
+      border-style:solid;
+      border: color #333;
+      border-spacing:0;
+
+    }
+    thead{
+      color: white;
+      background-color: rgb(141, 141, 145);
+    }
+    tbody{
+      background-color: rgb(235, 232, 232);
+    }
+    .line_impact {
+      background-color: rgb(178, 215, 243);
+    }
+    tfoot{
+      background-color: ivory;
+    }
+    .cell_01{ width:50px;}
+    .cell_02{ width:150px;}
+    /* .cell_03{ width:150px;} */
+    .cell_04{ width:200px;}
+  
+  </style>
+</head>
+<body>
+  <h1><a href="../index.html">웹기초</a></h1>
+  <h2>테이블 이해하기 </h2>
+
+  <table>
+
+    <caption>테이블 구조 이해하기</caption>
+
+    <colgroup>
+      <col class="cell_01">
+      <col class="cell_02" span="2">
+      <!-- <col class="cell_03"> -->
+      <col class="cell_04">
+      <col class="cell_05">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>ID no.</th><th>성</th><th>이름</th><th>이메일</th><th>작성일</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr class="line_impact">
+        <th>001</th>
+        <td colspan="2">Mark Octo</td>
+        <td><a href="#">mark@email.com</a></td>
+        <td>12.13</td>
+      </tr>
+      <tr>
+        <th>002</th>
+        <td>Json</td>
+        <td>Airdays</td>
+        <td><a href="#">Json@email.com</a></td>
+        <td>12.13</td>
+      </tr>
+      <tr class="line_impact">
+        <th>003</th>
+        <td>Larry</td>
+        <td>visually</td>
+        <td><a href="#">Larry@email.com</a></td>
+        <td>12.13</td>
+      </tr>
+      <tr>
+        <th>004</th>
+        <td>Gray</td>
+        <td>Bootlamp</td>
+        <td><a href="#">Gray@email.com</a></td>
+        <td>12.13</td>
+      </tr>
+      <tr class="line_impact">
+        <th>005</th>
+        <td rowspan="2">Park</td>
+        <td rowspan="2">-</td>
+        <td><a href="#">park@email.com</a></td>
+        <td rowspan="2">12.13</td>
+      </tr>
+      <tr>
+        <th>006</th>
+        <td><a href="#">red22@email.com</a>
+        </td>
+      </tr>
+
+    </tbody>
+
+    
+    <tfoot>
+      <tr>
+        <td>tfoot_1</td>
+        <td>tfoot_2</td>
+        <td>tfoot_3</td>
+        <td>tfoot_4</td>
+        <td>tfoot_5</td>
+      </tr>
+    </tfoot>
+    
+
+  </table>
+
+</body>
+</html>
