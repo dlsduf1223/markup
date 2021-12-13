@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- a_07_selector.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹기초</title>
+  <style>
+      body{      background-color: #efe;}
+      h1 { background-color: rgb(101, 89, 121); color:violet; }
+
+      #baseSelector {
+        border-width:2px;
+        border-style:solid;
+        border-color:red
+      }
+      
+      h2.select_title {background-color: peru; color: rgb(228, 70, 70)}
+      p.select_title {background-color: rgb(116, 16, 31); color:powderblue;}
+
+      #oneBox {width:400px;height:100px;}
+      .one_box {background-color: #aaa;}
+
+      #moreSelector {
+        /* border-width:2px;
+        border-style:dotted;
+        border-color:rgb(228, 70, 70); */
+        border: 3px dotted #f75;
+      }
+      /* 
+      id 이름을 작성할 경우: 카멜케이스 형식 ex. view box -> viewBox 
+      class 이름을 작성할 경우: 언더바 형식  ex. view box -> view_box
+      */
+  </style>
+</head>
+<body>
+  <h1>웹문서</h1>
+  <div id="baseSelector">
+    <h2 class="select_title">css의 선택자</h2>
+    <p class="select_title">내용을 작성</p>
+    <div id="oneBox" class="one_box">
+      하나의 박스를 생성
+    </div>
+
+  </div>
+
+  <div id="moreSelector">
+    <h2>선택자 추가</h2>
+    <p>다양한 선택자를 추가</p>
+  </div>
+  
+</body>
+</html>
